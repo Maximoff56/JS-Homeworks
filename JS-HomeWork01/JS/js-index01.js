@@ -19,7 +19,9 @@ console.log (y+z);
 console.log("Задание 4:")
 let m = 12;
 let n = 56;
-m = m/0;
-n = -n/0;
-console.log(m);
-console.log(n);
+console.log(m, n);
+n = [m, m=n][0];
+console.log(m, n);
+
+
+
