@@ -117,7 +117,6 @@ while (true) {
             clue = Math.floor(Math.random() * (clueMax - clueMin) + clueMin);
             continue;
         }
-
     }
 }
     // switch (rightQ) {
