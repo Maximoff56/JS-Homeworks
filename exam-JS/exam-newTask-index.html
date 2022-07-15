@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Новая задача</title>
+        <link rel="stylesheet" href="css/style-newTask.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <h2>Добавление задачи</h2>
+            <section class="section" class="addtask">
+                <div>
+                    <label class="label">Название задачи</label>
+                    <input type="text" placeholder="Введите название задачи" minlength="0" maxlength="20" id = "title" class="input">
+                    <span class="attention1" id="attention1">Название задачи должно быть от 5 до 20 символов</span>
+                </div>
+                <div>
+                    <label class="label">Описание задачи</label>
+                    <textarea id="description" placeholder="Введите описание задачи"></textarea>
+                </div>
+                <div>
+                    <label class="label">Срок выполнения задачи</label>
+                    <input id="date" type="datetime-local" class="input">
+                    <span class="attention2" id="attention2">Дата выполнения задачи не может быть в прошлом</span>
+                </div>
+            </section>
+            <aside class="section" id="participator_aside">
+                    <input class="add-button" type="submit" value="Добавить участника" id="add-button">
+                    <div class="add-participator" id="add-participator">
+                        <input type="text" placeholder="Введите имя участника" class="input-participator" id="participiant">
+                        <button id="remove-button">&#10006;</button>
+                    </div>
+            </aside>
+            <div class="section">
+                <input class="add-task" id="add-task"  type="submit" value="Добавить задачу">
+            </div>
+        </main>
+        <footer>
+            <script src="js/script-newTask.js"></script>
+        </footer>
+    </body>
+</html>

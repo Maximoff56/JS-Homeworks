@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Новое мероприятие</title>
+    <link rel="stylesheet" href="CSS/style-marketplace.css">
+</head>
+<body>
+<header class="main">
+    <section class="flex-row">
+        <a class="text-header1 text-menu menu-link" href="#">Menu</a>
+        <div class="flex-row main div-01">
+            <img name="logo" class="img-logo" src="https://vectorified.com/image/aston-martin-logo-vector-16.png">
+            <a href="#" class="text-header">О марке</a>
+            <a href="#" class="text-header">Автомобили</a>
+            <a href="#" class="text-header">История</a>
+            <a href="#" class="text-header">Мероприятия</a>
+            <a href="#" class="text-header">Контакты</a>
+        </div>
+        <div class="form-right">
+            <input type="text" class="form-header" name="search" placeholder="Поиск">
+        </div>
+    </section>
+</header>
+<main class="flex-row">
+    <aside class="aside">
+        <a class="text-aside1 text-menu menu-link" href="#">Модельный ряд</a>
+        <div class="flex-column div-02">
+            <a href="#" class="text-aside">Мероприятия</a>
+            <a href="#" class="text-aside">Добавить мероприятие</a>
+        </div>
+    </aside>
+    <div class="flex-column section-main">
+        <section class="flex-row">
+            <div class="flex-column col-12 style-main col-md-12 col-sm-12 col-xs-12">
+                <form name="add-event">
+                    <h2>Добавление нового мероприятия</h2>
+                    <h3 class="sub-res-hidden">Мероприятие было успешно добавлено</h3>
+                    <div class="form-list">
+                        <h4>Название мероприятия</h4>
+                        <input type="text" name="title" class="inp-form" placeholder="Введите название мероприятия" required minlength="1" maxlength="300">
+                    </div>
+                    <div class="form-list">
+                        <h4>Описание мероприятия</h4>
+                        <input type="text" name="about" class="inp-form" placeholder="Введите описание мероприятия" required minlength="1" maxlength="3000">
+                    </div>
+                    <div class="form-list">
+                        <h4>Время проведения мероприятия</h4>
+                        <input name="dateTime" class="inp-form" type="datetime-local" required>
+                    </div>
+                    <input name="plusMember" type="button" class="subm-but" value="Добавить участника">
+                    <div class="column-member">
+<!--&lt;!&ndash;                        <input type="text" placeholder="Введите ФИО участника">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" placeholder="Введите автомобиль участника">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="reset" value="X">&ndash;&gt;-->
+                    </div>
+                    <div>
+                        <input type="submit" class="subm-but" value="Добавить задачу">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="JS/js-event-form-new.js"></script>
+</main>
+<footer class="main">
+    <section class="flex-row">
+        <div class="flex-row main">
+            <img name="logo" class="img-logo" src="https://vectorified.com/image/aston-martin-logo-vector-16.png">
+        </div>
+    </section>
+</footer>
+</body>
+</html>
